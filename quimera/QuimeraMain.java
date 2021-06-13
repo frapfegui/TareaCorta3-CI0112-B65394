@@ -9,8 +9,7 @@ public class QuimeraMain {
         Conversores cv = new Conversores();
         String hileraArn = cv.convertirArn("GTGCATCTGACTCCTGAGGAGAAG");
         System.out.println(hileraArn);
-        //String hileraProteina = cv.convertirProteina(hileraArn);
-        //System.out.println(hileraProteina);
+        cv.convertirProteina(hileraArn);
     }
 
 }

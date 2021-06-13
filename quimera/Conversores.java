@@ -3,6 +3,7 @@
  * @author Franz Pfeiffer
  * @date 05-31-2021
  */
+
 public class Conversores{
 
     /**
@@ -25,20 +26,25 @@ public class Conversores{
         return arn;
     }
 
+    /**
+     * convierte un string de ARN en uno de proteina
+     * @param string que contiene el String de ARN
+     * @return no retorna nada imprimi directamenta letra por letra los grupos de 3 de ARN en proteinas
+     * parte de este metodo fue copiado de codigo profe Sivana StringBasic quitarVocales
+     */
     public void convertirProteina(String arn) {
-        //Divido cada string en grupos de 3
+        //Divido cada string en grupos de 3 partes
         arn = agregarGuiones(arn);
         System.out.println(arn);
         String[] parts = arn.split("-");
-        //obtengo las primeras dos letras de cada String de partes
-
-        //Recorrer cada string de cada parte como un arreglo
+        //obtengo las primeras dos letras de cada String del arreglo parts y recooro cada string como un arreglo
         for (int index = 0; index < 8; index++){
             //Obtengo el elemento que se encuentra en el indice
             char primerElemento = parts[index].charAt(0);
             char segundoElemento = parts[index].charAt(1);
             //tomando la primera y segunda letra de las partes ya puedo saber a que letra de la proteina corresponde
             char letraProteina = analizarLetras(primerElemento, segundoElemento);
+            //imprimo una por una cada letra conseguida con el metodo analizarLetras
             System.out.print(letraProteina);
         }
     }

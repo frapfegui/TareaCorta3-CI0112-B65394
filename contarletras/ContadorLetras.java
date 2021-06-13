@@ -1,6 +1,6 @@
 import java.lang.System;
 
-public class ContarLetras {
+public class ContadorLetras {
     /**
      * imprime una por una cada letra del abecedario y cuantas veces aparece en la oracion
      * @param string la oracion a la que vamos a contar las letras

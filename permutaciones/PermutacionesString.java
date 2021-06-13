@@ -3,7 +3,7 @@
  * @author Franz Pfeiffer
  * @date 05-31-2021
  */
-public class PermutarString {
+public class PermutacionesString {
 
     /**
      * Compara si un string es la permutacion de otro

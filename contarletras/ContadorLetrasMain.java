@@ -4,9 +4,9 @@
  * @author Franz Pfeiffer
  * @date 06-12-2021
  */
-public class  ContarLetrasMain {
+public class  ContadorLetrasMain {
     public static void main(String[] args) {
-        ContarLetras cl = new ContarLetras();
+        ContadorLetras cl = new ContadorLetras();
         cl.contarLetras("La casa de ana tiene fuego");
     }
 

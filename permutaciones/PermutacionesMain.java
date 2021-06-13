@@ -6,7 +6,7 @@
  */
 public class PermutacionesMain {
     public static void main(String[] args) {
-        PermutarString ps = new PermutarString();
+        PermutacionesString ps = new PermutacionesString();
         boolean permutacion = (ps.compararStrings("bad", "dab"));
         if (permutacion)
             System.out.println("True");

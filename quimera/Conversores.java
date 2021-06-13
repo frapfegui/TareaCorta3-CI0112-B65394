@@ -35,7 +35,6 @@ public class Conversores{
     public void convertirProteina(String arn) {
         //Divido cada string en grupos de 3 partes
         arn = agregarGuiones(arn);
-        System.out.println(arn);
         String[] parts = arn.split("-");
         //obtengo las primeras dos letras de cada String del arreglo parts y recooro cada string como un arreglo
         for (int index = 0; index < 8; index++){
